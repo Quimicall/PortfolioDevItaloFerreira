@@ -456,6 +456,59 @@ span{
     margin: auto;
 }
 
+.skills {
+    background: var(--bg-color);
+}
+
+.skills .skills-container{
+    background: #7c4bb749;
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.skills .skills-container .skill-box{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.skills .skills-container .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: var(--bg-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.skills .skills-container .bar:hover {
+    box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.03);
+}
+
+.skills .skills-container .bar .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills .skills-container .bar .info img{
+    width: 5rem;
+}
+
+.skills .skills-container .bar .info span{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
 .testimonials{
     background: var(--second-bg-color);
 }
@@ -637,7 +690,21 @@ span{
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
     }
+    .skills .skills-container {
+        width: 80%;
+        padding: 1.5rem;
+    }
+
+    .skills .skills-container .skill-box {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    .skills .skills-container .bar .info span {
+        font-size: 1.8rem;
+    }
 }
+
 
 @media(max-width:991px){
     .header{
@@ -660,6 +727,9 @@ span{
     .timeline-dot{
         left: 0;
     }
+
+
+
     .services{
         padding-bottom: 7rem;
     }
@@ -724,5 +794,23 @@ span{
 
     .services-container{
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .skills .skills-container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .skills .skills-container .skill-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    .skills .skills-container .bar .info img {
+        width: 4rem;
+    }
+
+    .skills .skills-container .bar .info span {
+        font-size: 1.6rem;
     }
 }
