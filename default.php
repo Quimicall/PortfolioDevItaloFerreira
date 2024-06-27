@@ -14,13 +14,15 @@
         <i class="fa-solid fa-bars" class="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="home">Home</a>
-            <a href="services">Services</a>
-            <a href="skills">Skills</a>
-            <a href="education">Education</a>
-            <a href="experience">Experience</a>
-            <a href="contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+    </header>
 
     <section class="home" id="home">
         <div class="home-img">
@@ -42,7 +44,6 @@
         </div>
     </section>
 
-    </header>
     <script src="/assets/js/script.js"></script>
 </body>
 </html>
